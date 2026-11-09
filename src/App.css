@@ -1,0 +1,257 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: #f4f6fb;
+  color: #182238;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.navbar {
+  height: 72px;
+  background: #111c35;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8%;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.brand-icon {
+  background: #32c69a;
+  color: #10223a;
+  border-radius: 10px;
+  padding: 8px 12px;
+}
+
+.nav-label {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #b8c6dc;
+}
+
+.main {
+  max-width: 720px;
+  margin: 65px auto;
+  padding: 0 20px;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.eyebrow {
+  color: #159b78;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 38px;
+  margin: 12px 0;
+}
+
+.subtitle {
+  color: #738097;
+  line-height: 1.6;
+}
+
+.calculator {
+  background: white;
+  border-radius: 18px;
+  padding: 32px;
+  box-shadow: 0 12px 40px rgba(26, 44, 77, 0.08);
+}
+
+.card-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.card-heading h2 {
+  margin: 0 0 7px;
+  font-size: 21px;
+}
+
+.card-heading p,
+.provider {
+  color: #8994a7;
+  font-size: 13px;
+}
+
+.live-status {
+  color: #159b78;
+  font-size: 11px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: #20c997;
+  border-radius: 50%;
+}
+
+.field label {
+  display: block;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  color: #8490a4;
+  margin-bottom: 10px;
+}
+
+.currency-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #dfe5ee;
+  border-radius: 10px;
+  padding: 10px 14px;
+  min-height: 65px;
+}
+
+.currency-input input,
+.result-amount {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  outline: none;
+  font-size: 25px;
+  font-weight: 700;
+  color: #182238;
+  background: transparent;
+}
+
+.currency-input select {
+  border: none;
+  outline: none;
+  background: #f0f4f8;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #182238;
+}
+
+.result-input {
+  background: #f4fbf8;
+  border-color: #c8eee0;
+}
+
+.swap-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 18px 0;
+}
+
+.exchange-line {
+  height: 1px;
+  flex: 1;
+  background: #e7ebf1;
+}
+
+.swap-button {
+  border: 1px solid #ccebdd;
+  background: #e9f8f2;
+  color: #159b78;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+.rate-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 22px;
+  color: #526078;
+  font-size: 13px;
+}
+
+.rate-date {
+  color: #8994a7;
+}
+
+.refresh-button {
+  width: 100%;
+  margin-top: 24px;
+  padding: 16px;
+  background: #159b78;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.refresh-button:hover {
+  background: #117e62;
+}
+
+.refresh-button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.error {
+  color: #c0392b;
+  font-size: 13px;
+}
+
+.provider {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+footer {
+  text-align: center;
+  margin-top: 35px;
+  color: #8994a7;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+@media (max-width: 500px) {
+  .main {
+    margin: 35px auto;
+  }
+
+  .calculator {
+    padding: 22px 18px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .rate-info {
+    flex-direction: column;
+  }
+}
