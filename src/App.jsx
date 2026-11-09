@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 
-const API_URL = '/api/v1/remittance/rate'
+const API_URL = 'https://api-remittance.fundio.in/api/v1/remittance/rate'
 
 const currencies = [
   'INR', 'MYR', 'USD', 'SGD', 'EUR', 'GBP', 'AED'
